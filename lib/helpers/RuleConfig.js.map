@@ -1,0 +1,1 @@
+{"version":3,"file":"RuleConfig.js","sourceRoot":"","sources":["../../src/helpers/RuleConfig.ts"],"names":[],"mappings":";;;AAEA;;;;;;;;;GASG;AACI,MAAM,sBAAsB,GAAG,CAAC,UAAqC,EAAU,EAAE;IACtF,IAAI,UAAU,EAAE;QACd,OAAO,UAAU,CAAC,IAAI,EAAE,IAAI,EAAE,CAAC,MAAM,CAAC,CAAC,CAAC,UAAU,CAAC,IAAI,CAAC,CAAC,CAAC,yCAAyC,CAAC;KACrG;IACD,OAAO,0CAA0C,CAAC;AACpD,CAAC,CAAC;AALW,QAAA,sBAAsB,0BAKjC"}
