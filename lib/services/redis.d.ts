@@ -63,26 +63,23 @@ export declare class RedisService {
      * Add a value to a Redis set under the given key.
      *
      * @param {string} key The key associated with the Redis set.
-     * @param {string} value The value to add to the Redis set.
+     * @param {RedisData} value The value to add to the Redis set.
      * @returns {Promise<void>} A Promise that resolves when the value is successfully added to the set.
      */
-    setAdd(key: string, value: RedisData): Promise<void>;
+    setAdd(key: string, value: Record<string, unknown>): Promise<void>;
     /**
-     *
-     * @deprecated Since version 1.2.4 Will be deleted in version 1.2.5. Use addOneGetCount instead
-     *
      * Add a value to a Redis set and then return all members from that set.
      *
      * @param {string} key The key associated with the Redis set.
-     * @param {string} value The value to add to the Redis set.
+     * @param {Record<string, unknown>} value The value to add to the Redis set.
      * @returns {Promise<string[]>} A Promise that resolves to an array of set members as strings.
      */
-    addOneGetAll(key: string, value: string): Promise<string[]>;
+    addOneGetAll(key: string, value: Record<string, unknown>): Promise<Array<Record<string, unknown>>>;
     /**
      * Add a value to a Redis set and then return number of members in the set after the addition.
      *
      * @param {string} key The key associated with the Redis set.
-     * @param {string} value The value to add to the Redis set.
+     * @param {Record<string, unknown>} value The value to add to the Redis set.
      * @returns {Promise<string[]>} A Promise that resolves to an array of set members as strings.
      */
     addOneGetCount(key: string, value: Record<string, unknown>): Promise<number>;

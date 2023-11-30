@@ -4,6 +4,14 @@ export interface IConfig {
         logstashHost: string;
         logstashPort: number;
         logstashLevel: string;
+        pinoElasticOpts: {
+            elasticUsername: string;
+            elasticPassword: string;
+            elasticHost: string;
+            elasticIndex?: string;
+            elasticVersion: number;
+            flushBytes: number;
+        };
     };
     apmLogging: boolean;
     apmSecretToken: string;
