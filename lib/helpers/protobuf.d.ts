@@ -1,6 +1,6 @@
 /// <reference types="node" />
 import protobuf from 'protobufjs';
-import { type LogMessage as LogMessageType } from './proto/message/LogMessage';
+import { type LogMessage as LogMessageType } from './proto/lumberjack/LogMessage';
 declare const FRMSMessage: protobuf.Type;
 /**
  * Create a Message `Buffer` derived from a byte array resulting from the input type
