@@ -5,4 +5,5 @@ interface ElasticLogger {
     ecsOpts: LoggerOptions;
 }
 export declare function createElasticStream(node: string, esVersion: number, username: string, password: string, flushBytes: number, index?: string): ElasticLogger;
+export type LogCallback = (...args: unknown[]) => unknown;
 export {};
